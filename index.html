@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tours and Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo1.png"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Discover Kenya's Wildlife</h1>
+            <p>Book your next adventure now</p>
+            <a href="contact.html" class="hero-btn">BOOK NOW</a>
+        </div>
+    </section>
+
+    <!--services-->
+
+    <section class="services">
+        <h1>Our Services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, officia?</p>
+        <div class="row">
+            <div class="col">
+                <h3>Ticketing</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, in, veniam architecto eius odio blanditiis impedit tempore velit doloribus, quo saepe voluptatibus perferendis ipsam nostrum vel obcaecati nulla voluptatem atque.</p>
+            </div>
+            <div class="col">
+                <h3>Hotel Booking</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, in, veniam architecto eius odio blanditiis impedit tempore velit doloribus, quo saepe voluptatibus perferendis ipsam nostrum vel obcaecati nulla voluptatem atque.</p>
+            </div>
+            <div class="col">
+                <h3>Safari Tours</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, in, veniam architecto eius odio blanditiis impedit tempore velit doloribus, quo saepe voluptatibus perferendis ipsam nostrum vel obcaecati nulla voluptatem atque.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--branches-->
+
+    <section class="branches">
+        <h1>Our Branches in Nairobi</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="branches-col">
+                <img src="images/london.jpg" alt="">
+                <div class="layer">
+                    <h3>VIEW-PARK</h3>
+                </div>
+            </div>
+            <div class="branches-col">
+                <img src="images/newyork.jpg" alt="">
+                <div class="layer">
+                    <h3>VISION</h3>
+                </div>
+            </div>
+            <div class="branches-col">
+                <img src="images/washington.jpg" alt="">
+                <div class="layer">
+                    <h3>HAZINA</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--tours-->
+
+    <section class="tours">
+        <h1>Popular Tours</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="tours-col">
+                <img src="images/nairobi-1.jpg">
+                <h3>Nairobi Natoinal Park</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quibusdam quas error?</p>
+            </div>
+            <div class="tours-col">
+                <img src="images/nairobi-2.jpg">
+                <h3>Nakuru Natoinal Park</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quibusdam quas error?</p>
+            </div>
+            <div class="tours-col">
+                <img src="images/nairobi-3.jpg">
+                <h3>Tsavo Natoinal Park</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quibusdam quas error?</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimanials">
+        <h1>What Our Clients Say</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="testimanial-col">
+                <img src="images/client-1.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eveniet soluta molestias sapiente amet sequi natus earum ipsum expedita obcaecati, dicta officia qui aut tenetur laborum, sunt minima rerum? Totam?</p>
+                <h3>Christine Berkley</h3>
+            </div>
+            <div class="testimanial-col">
+                <img src="images/client-2.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eveniet soluta molestias sapiente amet sequi natus earum ipsum expedita obcaecati, dicta officia qui aut tenetur laborum, sunt minima rerum? Totam?</p>
+                <h3>David Byer</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--call to action-->
+
+    <section class="cta">
+        <h1>Book Your Next Adventure Now <br>
+        Lorem ipsum dolor sit </h1>
+        <a href="" class="hero-btn">BOOK NOW</a>
+    </section>
+
+    <section class="footer">
+        <p>&copy; 2021 Tours and Travel. All rights reserved.</p>
+    </section>
+
+    <script>  
+        const bookNowButtons = document.querySelectorAll('.hero-btn');
+        bookNowButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                alert("Thank you for choosing our service! Your booking process will start shortly.");
+            });
+        });
+    </script>
+    
+
+</body>
+</html>

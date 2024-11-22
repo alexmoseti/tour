@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tours and Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo1.png"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+    </section>
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/staff.jpg" alt="">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque error autem quibusdam, illo laudantium dolorum dolor reprehenderit rerum, deserunt tenetur, minima sunt maxime laboriosam dignissimos! Aliquid quibusdam rem incidunt illo laudantium officiis iusto placeat eos magni perspiciatis quasi excepturi, adipisci neque natus expedita aspernatur fuga aut ratione corporis quo deleniti! Delectus ratione dicta rem, atque fugit officiis veniam qui.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque error autem quibusdam, illo laudantium dolorum dolor reprehenderit rerum, deserunt tenetur, minima sunt maxime laboriosam dignissimos! Aliquid quibusdam rem incidunt illo laudantium officiis iusto placeat eos magni perspiciatis quasi excepturi, adipisci neque natus expedita aspernatur fuga aut ratione corporis quo deleniti! Delectus ratione dicta rem, atque fugit officiis veniam qui.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque error autem quibusdam, illo laudantium dolorum dolor reprehenderit rerum, deserunt tenetur, minima sunt maxime laboriosam dignissimos! Aliquid quibusdam rem incidunt illo laudantium officiis iusto placeat eos magni perspiciatis quasi excepturi, adipisci neque natus expedita aspernatur fuga aut ratione corporis quo deleniti! Delectus ratione dicta rem, atque fugit officiis veniam qui.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque error autem quibusdam, illo laudantium dolorum dolor reprehenderit rerum, deserunt tenetur, minima sunt maxime laboriosam dignissimos! Aliquid quibusdam rem incidunt illo laudantium officiis iusto placeat eos magni perspiciatis quasi excepturi, adipisci neque natus expedita aspernatur fuga aut ratione corporis quo deleniti! Delectus ratione dicta rem, atque fugit officiis veniam qui.</p>
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <textarea id="comment" name="comment" rows="5" placeholder="Write your comment here..." required></textarea>
+                        
+                        <button type="submit" class="hero-btn red-btn">POST A COMMENT</button>
+                    </form>
+                </div>
+                
+            </div>
+            
+            <div class="blog-right">
+                <h3>Quick Facts</h3>
+                <table>
+                    <tr>
+                        <th>Fact</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td>Nairobi</td>
+                    </tr>
+                    <tr>
+                        <td>Best Time to Visit</td>
+                        <td>All Year</td>
+                    </tr>
+                    <tr>
+                        <td>Popular Tours</td>
+                        <td>City Tours, Adventure Trips</td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td>info@toursandtravel.com</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--call to action-->
+
+    <section class="cta">
+        <h1>Book Your Next Adventure Now <br>
+        Lorem ipsum dolor sit </h1>
+        <a href="" class="hero-btn">BOOK NOW</a>
+    </section>
+
+    <section class="footer">
+        <p>&copy; 2021 Tours and Travel. All rights reserved.</p>
+    </section>
+
+    <script>
+        const commentForm = document.querySelector('.comment-form');
+        
+        if (commentForm) {
+            commentForm.addEventListener('submit', (event) => {
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const comment = document.getElementById('comment').value.trim();
+    
+                if (!name || !email || !comment) {
+                    alert("Please fill out all fields before submitting your comment.");
+                    event.preventDefault();
+                } else {
+                    alert("Thank you for your comment!");
+                }
+            });
+        }
+    </script>
+    
+
+</body>
+</html>

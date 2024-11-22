@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tours and Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo1.png"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <section class="location">
+        <h1>Our Location</h1>
+        <p>View Park Tower, Utalii St, Nairobi</p>
+        <p>Vision Plaza, Mombasa Road, Nairobi</p>
+        <p>Phone: +254 715216775</p>
+        <p>Phone: +254 763721419</p>
+        <p>Email: <a href="">info@travelX.com</a></p>
+
+        <div class="blog-right">
+            <h3>Quick Facts</h3>
+            <table>
+                <tr>
+                    <th>Fact</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>Nairobi</td>
+                </tr>
+                <tr>
+                    <td>Best Time to Visit</td>
+                    <td>All Year</td>
+                </tr>
+                <tr>
+                    <td>Popular Tours</td>
+                    <td>City Tours, Adventure Trips</td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td>info@toursandtravel.com</td>
+                </tr>
+            </table>
+        </div>
+        <div class="comment-box">
+            <h3>Leave a Comment</h3>
+            <form class="comment-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="comment" name="comment" rows="5" placeholder="Write your comment here..." required></textarea>
+                
+                <button type="submit" class="hero-btn red-btn">POST A COMMENT</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="tours">
+        <h1>Popular Tours</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="tours-col">
+                <img src="images/nairobi-1.jpg">
+                <h3>Nairobi Natoinal Park</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quibusdam quas error?</p>
+            </div>
+            <div class="tours-col">
+                <img src="images/nairobi-2.jpg">
+                <h3>Nakuru Natoinal Park</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quibusdam quas error?</p>
+            </div>
+            <div class="tours-col">
+                <img src="images/nairobi-3.jpg">
+                <h3>Tsavo Natoinal Park</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quibusdam quas error?</p>
+            </div>
+        </div>
+    </section>
+
+    <!--testimanials-->
+    <section class="testimanials">
+        <h1>What Our Clients Say</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="testimanial-col">
+                <img src="images/client-1.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eveniet soluta molestias sapiente amet sequi natus earum ipsum expedita obcaecati, dicta officia qui aut tenetur laborum, sunt minima rerum? Totam?</p>
+                <h3>Christine Berkley</h3>
+            </div>
+            <div class="testimanial-col">
+                <img src="images/client-2.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eveniet soluta molestias sapiente amet sequi natus earum ipsum expedita obcaecati, dicta officia qui aut tenetur laborum, sunt minima rerum? Totam?</p>
+                <h3>David Byer</h3>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="footer">
+        <p>&copy; 2021 Tours and Travel. All rights reserved.</p>
+    </section>
+
+    <script>
+        const commentForm = document.querySelector('.comment-form');
+        
+        if (commentForm) {
+            commentForm.addEventListener('submit', (event) => {
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const comment = document.getElementById('comment').value.trim();
+    
+                if (!name || !email || !comment) {
+                    alert("Please fill out all fields before submitting your comment.");
+                    event.preventDefault(); 
+                } else {
+                    alert("Thank you for your comment!");
+                }
+            });
+        }
+    </script>
+    
+
+</body>
+</html>
